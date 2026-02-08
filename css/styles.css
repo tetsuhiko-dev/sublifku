@@ -1,0 +1,41 @@
+body {
+    background-color: #454545;
+}
+
+nav {
+    background-color: #606060 !important;
+}
+
+.slot_area {
+    cursor: pointer;
+    width: 8%;
+    margin-left: 46%;
+    margin-top: 1%;
+    padding: 0 !important;
+}
+
+.equipment_slot {
+    text-align: center;
+    padding: 5% !important;
+}
+
+.equipment_slot_item {
+    width: 22%;
+}
+
+.slot_chooser {
+    text-align: center;
+    padding: 5% !important;
+}
+
+.compute_btn {
+    width: 8%;
+    margin-left: 46%;
+    margin-top: 1%;
+}
+
+.table_subli {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
