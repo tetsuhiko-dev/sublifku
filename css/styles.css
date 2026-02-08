@@ -35,7 +35,39 @@ nav {
 }
 
 .table_subli {
-    width: 70%;
-    margin-left: 15%;
+    width: 30%;
+    margin-left: 35%;
     margin-top: 1%;
+}
+
+.permutation_area {
+    height: 2rem;
+}
+
+.permutation_body {
+    height: 75%;
+    padding: 0% 0% 2% 0%;
+}
+
+.permutation_slot_item {
+    width: 10%;
+    background-color: aliceblue;
+}
+
+.permutation_slot_item_left {
+    width: 10%;
+    background-color: aliceblue;
+    border-radius: 5% 0 0 5%;
+}
+
+.permutation_slot_item_center {
+    width: 10%;
+    background-color: aliceblue;
+    border-radius: 0 0 0 0;
+}
+
+.permutation_slot_item_right {
+    width: 10%;
+    background-color: aliceblue;
+    border-radius: 0 5% 5% 0;
 }
