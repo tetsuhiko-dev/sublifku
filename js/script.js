@@ -1,6 +1,7 @@
 let mouseCursor = null;
 let previous_color = null;
 let slot_colors = [null, null, null, null];
+
 function slot_color_click(color) {
     if (mouseCursor == null) {
         mouseCursor = document.querySelector(".slot_area");
@@ -71,4 +72,8 @@ function change_slot_color(element) {
     }
     slot_colors[element.attributes.slot_index.value] = previous_color;
     console.log(slot_colors);
+}
+
+function compute_slot() {
+    alert("toto");
 }
