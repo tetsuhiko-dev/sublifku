@@ -1,73 +1,135 @@
+/* =========================
+   GLOBAL / SHARED STYLES
+   ========================= */
+
 body {
     background-color: #454545;
 }
 
-nav {
+.navbar_wakfu {
     background-color: #606060 !important;
 }
 
 .slot_area {
     cursor: pointer;
-    width: 8%;
-    margin-left: 46%;
-    margin-top: 1%;
     padding: 0 !important;
 }
 
-.equipment_slot {
-    text-align: center;
-    padding: 5% !important;
-}
-
-.equipment_slot_item {
-    width: 22%;
-}
-
+.equipment_slot,
 .slot_chooser {
     text-align: center;
     padding: 5% !important;
 }
 
-.compute_btn {
-    width: 8%;
-    margin-left: 46%;
-    margin-top: 1%;
-}
-
-.table_subli {
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 1%;
-}
-
-.permutation_area {
-    height: 2rem;
-}
-
-.permutation_body {
-    height: 75%;
-    padding: 0% 0% 2% 0%;
-}
-
-.permutation_slot_item {
-    width: 10%;
-    background-color: aliceblue;
-}
-
-.permutation_slot_item_left {
-    width: 10%;
-    background-color: aliceblue;
-    border-radius: 5% 0 0 5%;
-}
-
-.permutation_slot_item_center {
-    width: 10%;
-    background-color: aliceblue;
-    border-radius: 0 0 0 0;
-}
-
+.permutation_slot_item,
+.permutation_slot_item_left,
+.permutation_slot_item_center,
 .permutation_slot_item_right {
-    width: 10%;
     background-color: aliceblue;
-    border-radius: 0 5% 5% 0;
+}
+
+/* =========================
+   DESKTOP (computer)
+   ========================= */
+@media (min-width: 1025px) {
+
+    .slot_area {
+        width: 8%;
+        margin-left: 46%;
+        margin-top: 1%;
+    }
+
+    .equipment_slot_item {
+        width: 22%;
+    }
+
+    .compute_btn {
+        width: 8%;
+        margin-left: 46%;
+        margin-top: 1%;
+    }
+
+    .table_subli {
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 1%;
+    }
+
+    .permutation_area {
+        height: 2rem;
+    }
+
+    .permutation_body {
+        height: 75%;
+        padding: 0 0 2% 0;
+    }
+
+    .permutation_slot_item,
+    .permutation_slot_item_left,
+    .permutation_slot_item_center,
+    .permutation_slot_item_right {
+        width: 10%;
+    }
+
+    .permutation_slot_item_left {
+        border-radius: 5% 0 0 5%;
+    }
+
+    .permutation_slot_item_center {
+        border-radius: 0;
+    }
+
+    .permutation_slot_item_right {
+        border-radius: 0 5% 5% 0;
+    }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 1025px) {
+
+    .slot_area {
+        width: 50%;
+        margin: 2% auto;
+    }
+
+    .equipment_slot_item {
+        width: 20%;
+    }
+
+    .compute_btn {
+        width: 50%;
+        margin: 2% auto;
+        display: block;
+    }
+
+    .table_subli {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .permutation_area {
+        height: 2rem;
+    }
+
+    .permutation_body {
+        height: 75%;
+        padding: 0 0 2% 0;
+    }
+
+    .permutation_slot_item,
+    .permutation_slot_item_left,
+    .permutation_slot_item_center,
+    .permutation_slot_item_right {
+        width: 7%;
+    }
+
+    .permutation_slot_item_left {
+        border-radius: 10% 0 0 10%;
+    }
+
+    .permutation_slot_item_right {
+        border-radius: 0 10% 10% 0;
+    }
 }
