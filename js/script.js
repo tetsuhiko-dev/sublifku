@@ -75,5 +75,10 @@ function change_slot_color(element) {
 }
 
 function compute_slot() {
-    alert("toto");
+    for(let i=0; i<slot_colors.length; i++) {
+        if(slot_colors[i] == null) {
+            alert("Please fill all slots !");
+            return;
+        }
+    }
 }
