@@ -1,6 +1,7 @@
 let mouseCursor = null;
 let previous_color = null;
 let slot_colors = [null, null, null, null];
+let color_btns = []
 
 function get_slot_color_url(color) {
     switch (color) {
@@ -15,9 +16,17 @@ function get_slot_color_url(color) {
     }
 }
 
-function slot_color_click(color) {
+function slot_color_click(btn, color) {
     if (mouseCursor == null) {
         mouseCursor = document.querySelector(".slot_area");
+    }
+
+    if(color_btns.length == 0){
+        color_btns = $(".slot_active");
+    }
+
+    for(let i=0; i<color_btns.length; i++){
+        color_btns[i].setAttribute("choose", (color_btns[i] == btn ? "activate": "deactivate"));
     }
 
     switch (color) {

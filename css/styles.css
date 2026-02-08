@@ -98,6 +98,14 @@ body {
         width: 20%;
     }
 
+    .slot_active[choose="activate"] {
+        opacity: 100%;
+    }
+
+    .slot_active[choose="deactivate"] {
+        opacity: 25%;
+    }
+
     .compute_btn {
         width: 50%;
         margin: 2% auto;
