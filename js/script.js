@@ -94,7 +94,7 @@ function compute_slot() {
     let slots = slot_colors[0] + slot_colors[1] + slot_colors[2] + slot_colors[3];
 
     $.ajax({
-        url: "http://152.228.135.62:18080/compute/" + slots,
+        url: "https://sublikfu.ddns.net/compute/" + slots,
         method: "GET",
         success: function(data) {
             let table_content = $("#table_content");
